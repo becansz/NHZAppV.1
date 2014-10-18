@@ -1,0 +1,28 @@
+<div class="modal">
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeSent()" >Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+ <div class="list card">
+
+  <a href="#/app/sent/add" class="item item-icon-left" ng-click="closeSent()">
+    <i class="ion-social-bitcoin"></i>
+    Sent by Address
+  </a>
+
+  <a href="#/app/sent/idnum" class="item item-icon-left" ng-click="closeSent()">
+    <i class="ion-social-usd"></i>
+    Sent by IDnumber
+  </a>
+
+  <a href="#/app/sent/alias"  class="item item-icon-left" ng-click="closeSent()">
+    <i class="ion-android-social-user"></i>
+    Sent by Alias name
+  </a>
+  
+</div>
+  </ion-content>
+</div>

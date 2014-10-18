@@ -1,0 +1,29 @@
+  <div class="bar bar-header bar-balanced" side="left">
+   <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  <div class="title">Confirmed Transaction</div>
+  <button class="button button-clear" ng-click="logout()"><i class="icon ion-log-out"></i></button>
+</div>
+<ion-view >
+ 
+<ion-content class="has-header">
+<ion-refresher on-refresh="refresh()"></ion-refresher>
+ <center> 
+    <h1>Confirmed Transaction</h1>
+    <h3>last 10 transaction</h3>
+<div class="list">
+
+  <div class="item item-divider">
+    Trasaction Data
+  </div>
+  <a class="item" href="#/app/cekid/{{tranca}}"ng-repeat="tranca in tranc.datas| reverse | limitTo:20">{{tranca}}</a>
+</div>
+<br/><br/><br/><br/><br/><br/>
+    </center>
+  </ion-content>
+  
+</ion-view>
+
+<div class="bar bar-footer bar-balanced">
+  <div class="title">NHZ Mobile Wallet Api V.1.1</div>
+</div>
+

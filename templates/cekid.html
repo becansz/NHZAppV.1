@@ -1,0 +1,31 @@
+  <div class="bar bar-header bar-balanced" side="left">
+   <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  <div class="title">Details Transaction</div>
+  <button class="button button-clear" ng-click="logout()"><i class="icon ion-log-out"></i></button>
+</div>
+<ion-view >
+  <ion-content class="has-header">
+
+   <center><h1>Details Transaction</h1></center>
+
+ <ul class="list">
+    
+           <li class="item">FullHash : {{fullHash.fullHash}}</li>
+           <li class="item">Confirmations : {{confirmations.confirmations}}</li>
+           <li class="item">SignatureHash : {{signatureHash.signatureHash}}</li>
+           <li class="item">Amount : {{amountNQT.amountNQT}}</li>
+           <li class="item">Recipient : {{recipientRS.recipientRS}}</li>
+           <li class="item">Fee :{{feeNQT.feeNQT}}</li>
+           <li class="item">Sender : {{senderRS.senderRS}}</li>
+           <li class="item">Signature : {{signature.signature}}</li>
+</ul>      
+<br/><br/><br/><br/><br/><br/>
+    
+  </ion-content>
+  
+</ion-view>
+
+<div class="bar bar-footer bar-balanced">
+  <div class="title">NHZ Mobile Wallet Api V.1.1</div>
+</div>
+

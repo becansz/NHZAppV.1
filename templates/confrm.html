@@ -1,0 +1,38 @@
+<div class="bar bar-header bar-balanced" side="left">
+  <div class="title">Login</div>
+</div>
+<ion-view>
+  <ion-content class="has-header">
+    
+<pre>
+  {{noticedata}}
+  {{noticedata2}}
+  </pre>
+</pre>
+    <form role="form" name="form">
+    <div class="list list-inset">
+    <pre>
+  RECIPIENT   :<label class="item item-input">
+     <input type="text" value="{{$routeParams.asu1}}" required class="form-control" readonly="true" />
+  </label>
+  AMMOUNT     : <label class="item item-input">
+    <input type="text" value="{{$routeParams.asu2}}"  required class="form-control" readonly="true"  >{{ state.params.asu1 }}
+  </label>
+  <label class="item item-input">
+    FEE         : <input type="text" value="{{$routeParams.asu3}}"  required class="form-control" readonly="true" />
+  </label>
+  <label class="item item-input">
+    <input type="text"  placeholder="please insert your password" required class="form-control" >
+  </label>
+</pre>
+</div>
+<div class="padding">
+        <button class="button button-block button-balanced" type="submit" ng-click="login(user)" ng-disabled="form.$invalid">Login</button>
+      </div>
+      </form>
+  </ion-content>
+</ion-view>
+
+<div class="bar bar-footer bar-balanced">
+  <div class="title">NHZ Mobille Wallet Api V.1.0</div>
+</div>

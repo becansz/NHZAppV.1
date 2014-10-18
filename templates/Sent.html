@@ -1,0 +1,48 @@
+
+  <div class="bar bar-header bar-balanced" side="left">
+   <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  <div class="title">Sent Nhz</div>
+  <button class="button button-clear" ng-click="logout()"><i class="icon ion-log-out"></i></button>
+</div>
+<ion-view >
+  <ion-content class="has-header">
+
+    <h1>Sent nhz</h1>
+    <div ng-controller="TodoCtrl">
+<form  ng-controller="KirimUang"  ng-submit="submit()"  role="form" name="form" >
+  <fieldset ng-disabled="OnSubmit">
+    <div class="list list-inset">
+  <div class="list">
+
+  <div class="item item-input-inset">
+     <label class="item-input-wrapper">
+       <input type="text" placeholder="Recieve" required class="form-control" ng-disabled="{{kirimuang}}" ng-change="gift()" ng-model="pene" />
+  </label>
+  <i class="item ion-person-add button-small" ng-click="scan()"></i>
+
+</div>
+  <br/>
+  <label class="item item-input">
+    <input type="text" placeholder="Amount" required class="form-control" ng-disabled="{{kirimuang}}" ng-change="change(nhz)" ng-model="nhz.jumlah">
+  </label><br/>
+  <label class="item item-input">
+    <input type="number" placeholder="fee" required class="form-control"  ng-disabled="{{kirimuang}}"  ng-model="counter" >
+  </label><br/>
+  
+  <label class="item item-input">
+  	<input type="text" placeholder="Secret pharese" required class="form-control" ng-disabled="{{kirimuang}}" ng-model="nhz.pwd">    
+  </label>
+</div>
+<div class="padding">
+        <button class="button button-block button-balanced"  type="submit" ng-click="sent(nhz)" ng-disabled="form.$invalid">Sent</button>
+      </div>
+      </fieldset>
+      </form>
+      </div>
+      <font color="red"> <center>{{puberor}}</center></font>
+      <br/><br/><br/><br/><br/>
+  </ion-content>
+</ion-view>
+<div class="bar bar-footer bar-balanced">
+  <div class="title">NHZ Mobile Wallet Api V.1.1</div>
+</div>

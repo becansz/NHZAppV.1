@@ -1,0 +1,35 @@
+.box-show-setup, .box-hide-setup {
+  -webkit-transition:all linear 0.3s;
+  -moz-transition:all linear 0.3s;
+  -ms-transition:all linear 0.3s;
+  -o-transition:all linear 0.3s;
+  transition:all linear 0.3s;
+}
+
+.box-show-setup { opacity:0; height: 0; }
+.box-show-setup.box-show-start { opacity:1; height: 100px; }
+
+.box-hide-setup { opacity:1; height: 0; }
+.box-hide-setup.box-hide-start { opacity:0; height: 100px; }
+#main
+{
+	font:bold 40px Georgia, serif;
+}
+growl-notification.fading.ng-move{
+    opacity: 0;
+    -webkit-transition: 1s linear all; /* Safari/Chrome */
+    transition: 1s linear all; /* All other modern browsers and IE10+ */
+}
+
+growl-notification.fading.ng-move.ng-move-active {
+    opacity: 1;
+}
+growl-notification.fading.ng-leave {
+    opacity: 1;
+    -webkit-transition: 1s linear all; /* Safari/Chrome */
+    transition: 1s linear all; /* All other modern browsers and IE10+ */
+}
+
+growl-notification.fading.ng-leave.ng-leave-active {
+    opacity: 0;
+}
